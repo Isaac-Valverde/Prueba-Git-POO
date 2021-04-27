@@ -11,8 +11,10 @@ class tenis:
 	#precio=0
 	#Ganancias que ha generado el producto
 	ganancias=0
-	#Numero de articulos vendidos
+	#Numero de articulos vendidos (por objeto)
 	ventas=0
+	#Numero de articulos vendidos (por clase)
+	ventasT=0
 
 	#-------Se definen los metodos-------
 	#inicialización del objeto
@@ -32,8 +34,10 @@ class tenis:
 			self.inventario-=vendidos #Esto es equivalente a: self.inventario=self.inventario-vendidos
 			#Se registra el monto de la venta
 			tenis.ganancias+=self.precio*vendidos
-			#Se registra la cantidad de articulos que se vendió
-			tenis.ventas+=vendidos
+			#Se registra la cantidad de articulos que se vendió (de todos los tenis en total)
+			tenis.ventasT+=vendidos
+			#Se registra la cantidad de articulos que se vendió del modelo (del objeto/instancia)
+			self.ventas+=vendidos
 
 	#Surtir (Se suma el número de tenis que llegan al inventario)
 	def surtir (self, surtidos):
