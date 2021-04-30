@@ -1,6 +1,6 @@
-#Esta clase simula la venta de playeras en un tienda de ropa vvirtual
+#Esta clase simula la venta de playeras en un tienda de ropa virtual
 class playeras:
-	veentas=0
+	ventas=0
 	ganancias=0
 	ventasT=0
 	gananciasT=0
